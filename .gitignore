@@ -47,3 +47,9 @@ credentials.json
 token.json
 *.tar.gz
 *.zip
+
+# Cloudflare / OpenNext
+.open-next
+.wrangler
+.dev.vars
+cloudflare-env.d.ts
