@@ -1,0 +1,5 @@
+{
+  "task.allowAutomaticTasks": "off",
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false
+}

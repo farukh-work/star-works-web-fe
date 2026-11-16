@@ -1,0 +1,962 @@
+[
+  {
+    "_id": "5def9223-e493-4aaf-ab88-3085d345f494",
+    "ctaSection": {
+      "contactButtonLink": "/contact-us",
+      "contactButtonText": "Contact Us",
+      "description": null,
+      "headingOne": null,
+      "headingTwo": null,
+      "secondaryButtonLink": "/portfolio",
+      "secondaryButtonText": "View Work",
+      "sectionTitle": "GET STARTED"
+    },
+    "deliverablesSection": {
+      "items": [
+        {
+          "description": "Professional stores tailored for online selling success.",
+          "nextNumber": "02",
+          "prevNumber": "01  ",
+          "title": "Custom Online Store"
+        },
+        {
+          "description": "Safe and smooth digital payment experiences.",
+          "nextNumber": "03",
+          "prevNumber": "02",
+          "title": "Secure Payment Integration"
+        },
+        {
+          "description": "Responsive shopping across all modern mobile devices.",
+          "nextNumber": "04",
+          "prevNumber": "03",
+          "title": "Mobile-Optimized Shopping Experience"
+        },
+        {
+          "description": "Easy management of products, stock, and orders.",
+          "nextNumber": "05",
+          "prevNumber": "04",
+          "title": "Product & Inventory Management"
+        },
+        {
+          "description": "Optimized layouts designed to increase customer purchases.",
+          "nextNumber": "06",
+          "prevNumber": "05",
+          "title": "Conversion-Focused Design"
+        },
+        {
+          "description": "Continuous updates, maintenance, and technical assistance.",
+          "nextNumber": "06",
+          "prevNumber": "06",
+          "title": "Ongoing Store Support"
+        }
+      ],
+      "sectionHeading": "What You Get"
+    },
+    "faqSection": {
+      "buttonLink": "/faqs",
+      "buttonText": "View All FAQs",
+      "heading": "ANY QUESTION FROM US",
+      "items": [
+        {
+          "desc": "We work with Shopify, WooCommerce, Magento, and custom e-commerce solutions.",
+          "title": "Which e-commerce platforms do you use?"
+        },
+        {
+          "desc": "Yes, we integrate secure payment gateways like Stripe, PayPal, and Razorpay.",
+          "title": "Can you integrate online payment systems?"
+        },
+        {
+          "desc": "Yes, every online store is fully responsive across all devices.",
+          "title": "Will my online store be mobile-friendly?"
+        },
+        {
+          "desc": "Yes, we offer ongoing support, updates, and maintenance after launch.",
+          "title": "Do you provide support after launch?"
+        }
+      ],
+      "tag": "FAQ"
+    },
+    "featuresSection": {
+      "sectionHeading": "What’s Included",
+      "slides": [
+        {
+          "description": "Professionally designed online stores tailored for your business.",
+          "heading": "Custom Store Design",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/17ef4f572d58f5a18209f24dcb8d20a81f63cc98-1720x1216.png"
+        },
+        {
+          "description": "Secure and seamless payment solutions for online transactions.",
+          "heading": "Payment Gateway Integration",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/73d61796a0dd2026855e6dee9a04a57af9f61ec8-1720x1216.png"
+        },
+        {
+          "description": "Easy product tracking and organized stock management systems.",
+          "heading": "Inventory Management",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/69940b420ce3f8b16fc57bcf9d42b6d5dd240c8c-1720x1216.png"
+        },
+        {
+          "description": "Smooth order handling and automated purchase management workflows.",
+          "heading": "Order Processing System",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/4d34f6a75e2057dc2f1506fb118137fde5a49d95-1720x1216.png"
+        },
+        {
+          "description": "User-friendly customer dashboards for orders and account management.",
+          "heading": "Customer Account Portal",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/4b7b4d7b6137bd504e98be91f504084fe1d9db11-1720x1216.png"
+        },
+        {
+          "description": "Fast and responsive checkout experience across all devices.",
+          "heading": "Mobile-Optimized Checkout",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/647d93957c3269754fc14563f216356eef63f0cb-1720x1216.png"
+        }
+      ]
+    },
+    "heroSection": {
+      "descriptionOne": "Create powerful online stores that drive sales and provide seamless shopping experiences. Our e-commerce solutions include payment integration, inventory management, and custom features.",
+      "descriptionTwo": "Building powerful online stores that deliver seamless shopping experiences. We develop scalable e-commerce platforms designed to increase sales and customer satisfaction.",
+      "heading": "E-commerce Solutions",
+      "heroImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-96c39e801871452c997aaa3028c2e33ba7f992b8-3600x2472-png",
+          "_type": "reference"
+        }
+      }
+    },
+    "processSection": {
+      "centerImage": "https://cdn.sanity.io/images/12m48ewa/production/369c9ff4d576101d42768af6d768ada0bab6a6a8-828x1294.webp",
+      "processCards": [
+        {
+          "align": "left",
+          "description": "Understanding products, audience, and business structure.",
+          "number": "01",
+          "title": "Store Planning"
+        },
+        {
+          "align": "right",
+          "description": "Planning shopping flows and user-friendly store layouts.",
+          "number": "02",
+          "title": "Store Wireframing"
+        },
+        {
+          "align": "left",
+          "description": "Designing engaging and conversion-focused shopping experiences",
+          "number": "03",
+          "title": "Store Design."
+        },
+        {
+          "align": "right",
+          "description": "Building the store with secure payment and product systems.",
+          "number": "04",
+          "title": "Development & Payment Setup"
+        },
+        {
+          "align": "center",
+          "description": "Testing performance and improving customer conversions.",
+          "number": "05",
+          "title": "Launch & Growth Optimization"
+        }
+      ],
+      "sectionHeading": "Our Process"
+    },
+    "slug": "e-commerce-solutions",
+    "technologiesSection": {
+      "sectionHeading": "Technologies We Use",
+      "technologies": [
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/d78db9e4f1338cb159eb73d2d680e51186c0eb21-602x602.png",
+          "title": "Shopify"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/71a9bb97faa47e6b307c20601bf5aeaab066a03c-680x680.png",
+          "title": "Stripe"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/085e5070c756099cb8658b98454998639b7ecda7-528x528.png",
+          "title": "React"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/63e4d198134e999b98ec43b476e9b3e324b5ca5f-267x267.png",
+          "title": "Figma"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/d3a0fb5b14b62bdf8d3f70a81c5c4cc44c7791da-553x553.png",
+          "title": "Magento"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/96333accfc0f21ed99bd366e0f1ed1baeba2e6db-697x697.png",
+          "title": "Onepage"
+        }
+      ]
+    },
+    "title": "e-commerce-solutions"
+  },
+  {
+    "_id": "a8614122-82ad-434a-a5cf-9486660e4ff3",
+    "ctaSection": {
+      "contactButtonLink": "/contact-us",
+      "contactButtonText": "Contact Us",
+      "description": null,
+      "headingOne": null,
+      "headingTwo": null,
+      "secondaryButtonLink": "/portfolio",
+      "secondaryButtonText": "View Work",
+      "sectionTitle": "GET STARTED"
+    },
+    "deliverablesSection": {
+      "items": [
+        {
+          "description": "Targeted plans designed for measurable business growth.",
+          "nextNumber": "01",
+          "prevNumber": "01",
+          "title": "Customized Marketing Strategy"
+        },
+        {
+          "description": "Engaging campaigns across major social media platforms.",
+          "nextNumber": "03",
+          "prevNumber": "02",
+          "title": "Social Media Campaigns"
+        },
+        {
+          "description": "Improved search rankings and organic online visibility.",
+          "nextNumber": "04",
+          "prevNumber": "03",
+          "title": "SEO Optimization"
+        },
+        {
+          "description": "Performance-focused advertising campaigns with better conversions.",
+          "nextNumber": "05",
+          "prevNumber": "04",
+          "title": "Paid Advertising Management"
+        },
+        {
+          "description": "Creative content strategies for audience engagement.",
+          "nextNumber": "06",
+          "prevNumber": "05",
+          "title": "Content Creation & Planning"
+        },
+        {
+          "description": "Detailed analytics with actionable marketing insights.",
+          "nextNumber": "06",
+          "prevNumber": "06",
+          "title": "Performance Tracking Reports"
+        }
+      ],
+      "sectionHeading": "What You Get"
+    },
+    "faqSection": {
+      "buttonLink": "/faqs",
+      "buttonText": "View All FAQs",
+      "heading": "ANY QUESTION FROM US",
+      "items": [
+        {
+          "desc": "We manage Instagram, Facebook, LinkedIn, Google Ads, YouTube, and more.",
+          "title": "Which platforms do you manage for marketing?"
+        },
+        {
+          "desc": "How do you measure campaign performance?",
+          "title": "How do you measure campaign performance?"
+        },
+        {
+          "desc": "Yes, we create engaging content tailored to your brand and marketing goals.",
+          "title": "Do you provide content creation services?"
+        },
+        {
+          "desc": " Results vary by strategy, but most campaigns show measurable improvements within a few weeks.",
+          "title": "How long does it take to see results?"
+        }
+      ],
+      "tag": "FAQ"
+    },
+    "featuresSection": {
+      "sectionHeading": "Digital Marketing",
+      "slides": [
+        {
+          "description": "Improving search rankings and increasing organic website traffic.",
+          "heading": "Search Engine Optimization",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/8cab339a1bafe544de58282f053fca9c945c2eb0-1720x1216.png"
+        },
+        {
+          "description": "Carefully selected color combinations designed to reflect your brand personality and identity.",
+          "heading": "Pay-Per-Click Advertising",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/1c7c5369b03362f633db08bedd90c7c804ebad14-1720x1216.png"
+        },
+        {
+          "description": "Carefully selected color combinations designed to reflect your brand personality and identity.",
+          "heading": "Content Marketing",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/12367f767a2cd50669ed30a632b928dc3a70aea1-1720x1216.png"
+        },
+        {
+          "description": "Carefully selected color combinations designed to reflect your brand personality and identity.",
+          "heading": "Social Media Management",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/031e104377e2841a1ef12f7e635648c12f244291-1290x912.png"
+        },
+        {
+          "description": "Carefully selected color combinations designed to reflect your brand personality and identity.",
+          "heading": "Email Marketing Campaigns",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/3bb04ef4ef01438607e899e4544f4a22f1833993-1720x1216.png"
+        },
+        {
+          "description": "Carefully selected color combinations designed to reflect your brand personality and identity.",
+          "heading": "Analytics & Reporting",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/1805f54d4d2f1662ae0c75a916b6ef88ad069eca-1720x1216.png"
+        }
+      ]
+    },
+    "heroSection": {
+      "descriptionOne": "We create result-driven marketing strategies that increase visibility, engagement, and conversions.",
+      "descriptionTwo": "Boost your online presence with comprehensive digital marketing strategies. We offer SEO, social media marketing, content creation, and PPC campaigns to grow your business.",
+      "heading": "Digital Marketing",
+      "heroImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-67c09523279c652cb3e33d5829bd1440f2aac2a3-3252x2472-png",
+          "_type": "reference"
+        }
+      }
+    },
+    "processSection": {
+      "centerImage": "https://cdn.sanity.io/images/12m48ewa/production/369c9ff4d576101d42768af6d768ada0bab6a6a8-828x1294.webp",
+      "processCards": [
+        {
+          "align": "left",
+          "description": "Understanding audience behavior and industry trends.",
+          "number": "01",
+          "title": "Market Analysis"
+        },
+        {
+          "align": "right",
+          "description": "Creating customized marketing campaigns and content plans.",
+          "number": "02",
+          "title": "Strategy Planning"
+        },
+        {
+          "align": "left",
+          "description": "Designing ad creatives, content, and marketing assets.",
+          "number": "03",
+          "title": "Content & Campaign Creation"
+        },
+        {
+          "align": "right",
+          "description": "Running ads, social media campaigns, and SEO activities.",
+          "number": "04",
+          "title": "Campaign Execution"
+        },
+        {
+          "align": "center",
+          "description": "Tracking analytics and improving campaign results.",
+          "number": "05",
+          "title": "Performance Optimization"
+        }
+      ],
+      "sectionHeading": "Our Process"
+    },
+    "slug": "digital-marketing",
+    "technologiesSection": {
+      "sectionHeading": "Technologies We Use",
+      "technologies": [
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/1a546456470c31aea3ed97004ef041ff07cacb98-602x602.png",
+          "title": "Meta"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/b74c7fad446341f19b3d36f9c1c98d965e4eb998-680x680.png",
+          "title": "Google-Analytics"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/d3aaf3258db7ab44cdb5b63e5e334dd3520c50d2-680x680.png",
+          "title": "Youtube"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/1c84d3e77b86a5e8897d0448a0b0e77d33e8b783-602x602.png",
+          "title": "Semrush"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/1b9cfadfdbdcc187e7bbc66eb49b211fbaca780a-553x553.png",
+          "title": "Google-Ads"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/c831a6ef874ee1cef6ac276438836998ea4c6a6d-697x697.png",
+          "title": "Linkedin"
+        }
+      ]
+    },
+    "title": "digital-marketing"
+  },
+  {
+    "_id": "abd374a3-d141-46ef-b406-a1f8661ef37e",
+    "ctaSection": {
+      "contactButtonLink": "/contact-us",
+      "contactButtonText": "Contact Us",
+      "description": null,
+      "headingOne": null,
+      "headingTwo": null,
+      "secondaryButtonLink": "/portfolio",
+      "secondaryButtonText": "View Work",
+      "sectionTitle": "GET STARTED"
+    },
+    "deliverablesSection": {
+      "items": [
+        {
+          "description": "Tailored websites designed for seamless digital experiences.",
+          "nextNumber": "02",
+          "prevNumber": "01   ",
+          "title": "Custom Responsive Website"
+        },
+        {
+          "description": "Optimized speed and scalability for growing businesses.",
+          "nextNumber": " 03  ",
+          "prevNumber": "02   ",
+          "title": "Fast & Scalable Performance"
+        },
+        {
+          "description": "Clean interfaces focused on user engagement.",
+          "nextNumber": "04 ",
+          "prevNumber": "03     ",
+          "title": "Modern UI/UX Design"
+        },
+        {
+          "description": "Easy management with powerful third-party integrations.",
+          "nextNumber": " 05  ",
+          "prevNumber": "04    ",
+          "title": "CMS & API Integrations"
+        },
+        {
+          "description": "Built with search visibility and performance optimization.",
+          "nextNumber": "06  ",
+          "prevNumber": "05  ",
+          "title": "SEO-Friendly Structure"
+        },
+        {
+          "description": "Regular updates, monitoring, and technical improvements.",
+          "nextNumber": " 06  ",
+          "prevNumber": "06   ",
+          "title": "Ongoing Support & Maintenance"
+        }
+      ],
+      "sectionHeading": "What You Get"
+    },
+    "faqSection": {
+      "buttonLink": "/faqs",
+      "buttonText": "View All FAQs",
+      "heading": "Any Question From Us",
+      "items": [
+        {
+          "desc": "Most websites are completed within 2–6 weeks depending on features and project scope.",
+          "title": "How long does a website project take?"
+        },
+        {
+          "desc": "Yes, every website we create is fully responsive and optimized for desktop, tablet, and mobile devices.",
+          "title": "Will my website be mobile responsive?"
+        },
+        {
+          "desc": "Can I manage the website after launch?",
+          "title": "Can I manage the website after launch?"
+        },
+        {
+          "desc": "Yes, we provide ongoing maintenance and technical support.",
+          "title": "Do you provide website maintenance services?"
+        }
+      ],
+      "tag": "FAQ"
+    },
+    "featuresSection": {
+      "sectionHeading": "What’s Included",
+      "slides": [
+        {
+          "description": "Custom web solutions built for seamless performance across every device.",
+          "heading": "Custom Web Applications",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/e4911f3edd1b5f1395d69526631c1291b86d02c2-1720x1216.png"
+        },
+        {
+          "description": "Powerful online stores designed for seamless shopping experiences.",
+          "heading": "E-Commerce Solutions",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/041ee4e4fce66fe03e03c9eecc4ca14188970397-1720x1216.png"
+        },
+        {
+          "description": "Flexible content management systems for easy website content updates.",
+          "heading": "Cms Development",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/5bb672612c701b2f4da6124bfb83990047b3934d-1720x1216.png"
+        },
+        {
+          "description": "Structured database solutions ensuring security, speed, and reliable performance.",
+          "heading": "Database Design",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/683c866a3f7bed8becec023f5aad9b52444807e4-1720x1216.png"
+        },
+        {
+          "description": "Structured database solutions ensuring security, speed, and reliable performance.",
+          "heading": "Database Design",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/683c866a3f7bed8becec023f5aad9b52444807e4-1720x1216.png"
+        },
+        {
+          "description": "Optimized websites delivering faster loading speeds and smooth user experiences.",
+          "heading": "Performance Optimization",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/57c384fd6f6f75d2edbd8e6ae18b8911b3e114c4-1290x912.png"
+        },
+        {
+          "description": "Smooth third-party integrations to enhance functionality and workflow automation.",
+          "heading": "Api Integration",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/c9e7aaf551df50886ad7c95c13974151d987af69-1720x1216.png"
+        }
+      ]
+    },
+    "heroSection": {
+      "descriptionOne": "Our web development process focuses on building fast, scalable, and high-performing digital solutions that deliver seamless functionality.",
+      "descriptionTwo": "Build robust and scalable websites tailored to your needs. Our web development expertise ensures seamless functionality, fast load times, and optimal performance across all devices.",
+      "heading": "Web Development",
+      "heroImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-60986081c7219cbc737e9ef9bafeb60e46d38e95-870x1236-png",
+          "_type": "reference"
+        }
+      }
+    },
+    "processSection": {
+      "centerImage": "https://cdn.sanity.io/images/12m48ewa/production/369c9ff4d576101d42768af6d768ada0bab6a6a8-828x1294.webp",
+      "processCards": [
+        {
+          "align": "left",
+          "description": "Understanding your business goals, audience, and website requirements.",
+          "number": "01",
+          "title": "Requirement Analysis"
+        },
+        {
+          "align": "right",
+          "description": "Creating sitemap structures, user flows, and layout planning.",
+          "number": "02",
+          "title": "Planning & Wireframing"
+        },
+        {
+          "align": "left",
+          "description": "Designing modern, user-friendly, and engaging website interfaces.",
+          "number": "03",
+          "title": "UI/UX Design"
+        },
+        {
+          "align": "right",
+          "description": "Building responsive, scalable, and high-performance websites.",
+          "number": "04",
+          "title": "Development & Integration"
+        },
+        {
+          "align": "center",
+          "description": "Optimizing speed, fixing issues, and deploying the final website.",
+          "number": "05",
+          "title": "Testing & Launch"
+        }
+      ],
+      "sectionHeading": "Our Process"
+    },
+    "slug": "web-development",
+    "technologiesSection": {
+      "sectionHeading": "Technologies We Use",
+      "technologies": [
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/d18dc23c9570b39a96c4187fad97bb4d74f54458-602x602.png",
+          "title": "Css"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/9737196d092b02f05a7354c1e7c1ad84df25e580-170x170.png",
+          "title": "Javascript"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/b06c67aafec0dc54c726ca6cb53e88100eab8758-680x680.png",
+          "title": "wordpress"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/c47dc5a7179df4e2179b71abd22a0aea2127b32b-602x602.png",
+          "title": "Shopify"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/7410ebf9744b44a078d65bedca14d25171cb84eb-415x415.png",
+          "title": "React"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/84e2aef761f24026e80feceabafd657cb0624789-523x523.png",
+          "title": "Html"
+        }
+      ]
+    },
+    "title": "web-development"
+  },
+  {
+    "_id": "d907e09d-fe2d-469c-b1f5-ee15235575c8",
+    "ctaSection": {
+      "contactButtonLink": "/contact-us",
+      "contactButtonText": "Contact Us",
+      "description": null,
+      "headingOne": null,
+      "headingTwo": null,
+      "secondaryButtonLink": "/portfolio",
+      "secondaryButtonText": "View Work",
+      "sectionTitle": "GET STARTED"
+    },
+    "deliverablesSection": {
+      "items": [
+        {
+          "description": "Unique logos crafted for strong brand recognition.",
+          "nextNumber": "02",
+          "prevNumber": "01",
+          "title": "Professional Logo Design"
+        },
+        {
+          "description": "Consistent branding rules for every platform.",
+          "nextNumber": "03",
+          "prevNumber": "02",
+          "title": "Complete Brand Guidelines"
+        },
+        {
+          "description": "Carefully selected fonts and visual color palettes.",
+          "nextNumber": "04",
+          "prevNumber": "03",
+          "title": "Typography & Color System"
+        },
+        {
+          "description": "Creative templates for cohesive social media presence.",
+          "nextNumber": "05",
+          "prevNumber": "04",
+          "title": "Social Media Branding Assets"
+        },
+        {
+          "description": "Visually engaging packaging and marketing materials.",
+          "nextNumber": "06",
+          "prevNumber": "05",
+          "title": "Packaging & Print Designs"
+        },
+        {
+          "description": "Organized files ready for future brand usage.",
+          "nextNumber": "06",
+          "prevNumber": "06",
+          "title": "Editable Source Files"
+        }
+      ],
+      "sectionHeading": "What You Get"
+    },
+    "faqSection": {
+      "buttonLink": "/faqs",
+      "buttonText": "View All FAQs",
+      "heading": "ANY QUESTION FROM US",
+      "items": [
+        {
+          "desc": "It includes logo design, typography, color palette, guidelines, and branding assets.",
+          "title": "What is included in a brand identity package?"
+        },
+        {
+          "desc": "You'll receive 2–5 unique logo concepts, depending on the selected branding package.",
+          "title": "How many logo concepts will I receive?"
+        },
+        {
+          "desc": "Yes, all final logo files are delivered in editable formats such as AI, EPS, SVG, and PDF.",
+          "title": "Will I get editable source files?"
+        },
+        {
+          "desc": "Yes, we can refresh or redesign your brand while preserving its core identity.",
+          "title": "Can you redesign an existing brand identity?"
+        }
+      ],
+      "tag": "FAQ"
+    },
+    "featuresSection": {
+      "sectionHeading": "What’s Included",
+      "slides": [
+        {
+          "description": "Unique logo concepts and variations crafted for strong brand recognition and consistency.",
+          "heading": "Logo Design & Variations",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/3f667fdbd523fc0224f0bb3c6fa5e58bbfedbcbd-1720x1216.png"
+        },
+        {
+          "description": "Carefully selected color combinations designed to reflect your brand personality and identity.",
+          "heading": "Brand Color Palette",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/3d41c71b9c77056f6ed3c169ec9122c1ce2082e8-1720x1216.png"
+        },
+        {
+          "description": "Professional font pairings chosen to create a clean, modern, and memorable appearance.",
+          "heading": "Typography Selection",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/d2ec2bdf7a759a45ffaf858ac3380b0296d85b92-1290x912.png"
+        },
+        {
+          "description": "Detailed brand guidelines ensuring consistent visual communication across all digital and print platforms.",
+          "heading": "Brand Guidelines Document",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/c7a0b2c3c55fe96b75e78fa8cdc8330fce8f4d5a-1720x1216.png"
+        },
+        {
+          "description": "Modern and professional business card layouts designed to leave a lasting first impression.",
+          "heading": "Business Card Design",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/5b1722a0310b873f4f8f009f0fe17a678a871f58-1720x1216.png"
+        },
+        {
+          "description": "Creative and customizable templates for social media, presentations, and promotional marketing materials.",
+          "heading": "Marketing Material Templates",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/b888efd568a9e17bf1032dacdbaf138d21963dbe-1720x1216.png"
+        }
+      ]
+    },
+    "heroSection": {
+      "descriptionOne": "We craft unique brand identities that reflect your vision, values, and personality.",
+      "descriptionTwo": "Create a memorable brand identity that sets you apart from the competition. Our branding services include logo design, brand guidelines, and complete visual identity packages.",
+      "heading": "Brand Identity",
+      "heroImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-6b3298e072e14c8e891aa8020ceacb5e5b24d02f-2439x1854-png",
+          "_type": "reference"
+        }
+      }
+    },
+    "processSection": {
+      "centerImage": "https://cdn.sanity.io/images/12m48ewa/production/369c9ff4d576101d42768af6d768ada0bab6a6a8-828x1294.webp",
+      "processCards": [
+        {
+          "align": "left",
+          "description": "Analyzing your market, audience, and competitors.",
+          "number": "01",
+          "title": "Brand Research"
+        },
+        {
+          "align": "right",
+          "description": "Defining brand tone, positioning, and visual direction.",
+          "number": "02",
+          "title": "Brand Strategy"
+        },
+        {
+          "align": "left",
+          "description": "Developing logo concepts, color palettes, and creative styles.",
+          "number": "03",
+          "title": "Concept Creation"
+        },
+        {
+          "align": "right",
+          "description": "Creating typography, guidelines, and branding assets.",
+          "number": "04",
+          "title": "Brand Design System"
+        },
+        {
+          "align": "center",
+          "description": "Delivering complete brand identity files and usage kits.",
+          "number": "05",
+          "title": "Final Delivery"
+        }
+      ],
+      "sectionHeading": "Our Process"
+    },
+    "slug": "brand-identity",
+    "technologiesSection": {
+      "sectionHeading": "Technologies We Use",
+      "technologies": [
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/902ce0f1d89a504d98e8b92a0a9abd46d3735c6b-301x301.png",
+          "title": "Sketch"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/1680fc5b5b0ba18f86be034f6da7b280d5af8b59-336x336.png",
+          "title": "Adobe After Effects"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/448c161c0a3578455c46ad354ecdebb8a57eba82-340x340.png",
+          "title": "Adobe Illustrator"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/615a3fe6de966d4750c30b6eb8db02cdafdfa709-280x280.png",
+          "title": "Adobe Photoshop"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/819c5633cbe8cda68bd673abf2af85186627b25b-277x277.png",
+          "title": "Figma"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/5700169e2fac08591a27ec558050f6fe068f18f0-340x340.png",
+          "title": "LinkedIn"
+        }
+      ]
+    },
+    "title": "Brand Identity"
+  },
+  {
+    "_id": "f6b407f8-8b81-48ca-b5d9-45415cbbf45d",
+    "ctaSection": {
+      "contactButtonLink": "/contact-us",
+      "contactButtonText": "Contact Us",
+      "description": null,
+      "headingOne": "Ready to Start? ",
+      "headingTwo": "Your Project?",
+      "secondaryButtonLink": "/portfolio",
+      "secondaryButtonText": "View Work",
+      "sectionTitle": "GET STARTED"
+    },
+    "deliverablesSection": {
+      "items": [
+        {
+          "description": "Tailored UI design crafted for your brand and audience.",
+          "nextNumber": "02",
+          "prevNumber": "01",
+          "title": "User-Centered UI "
+        },
+        {
+          "description": "Fully responsive layouts optimized for all devices.",
+          "nextNumber": "03",
+          "prevNumber": "02",
+          "title": "Mobile & Tablet Layouts"
+        },
+        {
+          "description": "Consistent typography, colors, and branding rules.",
+          "nextNumber": "04",
+          "prevNumber": "03",
+          "title": "Style Guide & Brand Guidelines"
+        },
+        {
+          "description": "Clickable prototypes to visualize user flow and UX.",
+          "nextNumber": "05",
+          "prevNumber": "04",
+          "title": "Interactive Prototypes"
+        },
+        {
+          "description": "Reusable components and structured design system.",
+          "nextNumber": "06",
+          "prevNumber": "05",
+          "title": "Design System Documentation"
+        },
+        {
+          "description": "All final files delivered (Figma, assets, exports).",
+          "nextNumber": "06",
+          "prevNumber": "06",
+          "title": "Source Files & Assets"
+        }
+      ],
+      "sectionHeading": "What You Get"
+    },
+    "faqSection": {
+      "buttonLink": "/faqs",
+      "buttonText": "View All FAQs",
+      "heading": "ANY QUESTION FROM US",
+      "items": [
+        {
+          "desc": "Yes, we create fully responsive designs that work seamlessly across desktops, tablets, and mobile devices. Our approach ensures a smooth and consistent user experience on every screen size.",
+          "title": "Do you provide responsive design?"
+        },
+        {
+          "desc": "Absolutely. We value collaboration and offer revisions throughout the design process to ensure the final result aligns perfectly with your vision and business goals.",
+          "title": "Can I request revisions?"
+        },
+        {
+          "desc": "Yes, we design interactive prototypes that help visualize user flow, layout structure, and functionality before development begins. This allows for faster feedback and more accurate implementation.",
+          "title": "Do you create prototypes?"
+        },
+        {
+          "desc": "We use industry-leading tools like Figma, Sketch, and the Adobe Creative Cloud suite to craft modern, scalable, and visually engaging digital experiences.",
+          "title": "Which tools do you use for UI/UX design?"
+        }
+      ],
+      "tag": "FAQ"
+    },
+    "featuresSection": {
+      "sectionHeading": "What’s Included",
+      "slides": [
+        {
+          "description": "Tailored interfaces designed to match your brand and deliver seamless user experiences.",
+          "heading": "Custom UI/UX Design",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/169566f0f9440b0210af5ed62528e283a911d4b7-1720x1216.webp"
+        },
+        {
+          "description": "Layouts optimized to work flawlessly across all screen sizes and devices.",
+          "heading": "Responsive Design",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/965e92dd082fe2819ffca4136a3445cb48b2a6ce-1720x1216.png"
+        },
+        {
+          "description": "Consistent use of brand elements to create a cohesive and recognizable identity.",
+          "heading": "Brand Integration",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/65b1dd4bb7689adb71ac8197a22b91ccd6b07b08-1720x1216.webp"
+        },
+        {
+          "description": "Improving usability and flow to ensure intuitive and engaging interactions.",
+          "heading": "User Experience Optimization",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/38bf365e0202c0b865566deeabc5ef2c018000a6-1720x1216.webp"
+        },
+        {
+          "description": "Reusable components and guidelines to maintain consistency across your product.",
+          "heading": "Design System Creation",
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/8ff7e4201559ae580e09f6d557e4e7cc348e1ad5-1720x1216.webp"
+        }
+      ]
+    },
+    "heroSection": {
+      "descriptionOne": "Our web design process focuses on creating digital experiences that not only look stunning but also perform exceptionally.",
+      "descriptionTwo": "We combine aesthetic excellence with user-centered design principles to deliver websites that engage your audience and drive conversions.",
+      "heading": "Web Design",
+      "heroImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-724df8e5d03069e9b95052491d8fdaca07434109-3708x2472-png",
+          "_type": "reference"
+        }
+      }
+    },
+    "processSection": {
+      "centerImage": "https://cdn.sanity.io/images/12m48ewa/production/b2d85477cd060506decd9fd90d6c08d749df84c5-1996x3120.webp",
+      "processCards": [
+        {
+          "align": "left",
+          "description": "01Discovery",
+          "number": "01",
+          "title": "Discovery"
+        },
+        {
+          "align": "right",
+          "description": "Market analysis, competitor study, and user behavior research",
+          "number": "02",
+          "title": "Research"
+        },
+        {
+          "align": "left",
+          "description": "Creating wireframes, mockups, and interactive prototypes",
+          "number": "03",
+          "title": "Design"
+        },
+        {
+          "align": "right",
+          "description": "Collaborative review process with iterative improvements",
+          "number": "04",
+          "title": "Feedback"
+        },
+        {
+          "align": "center",
+          "description": "Delivering final design assets and comprehensive style guides",
+          "number": "05",
+          "title": "Finalization"
+        }
+      ],
+      "sectionHeading": "Our Process"
+    },
+    "slug": "web-design",
+    "technologiesSection": {
+      "sectionHeading": "Technologies We Use",
+      "technologies": [
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/b716e23c7e9e8989b9872b3ff72b25b107cc2900-553x553.webp",
+          "title": "Figma"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/0d68ea49365de07b7a3ebd944f909a551bc65358-680x680.webp",
+          "title": "Adobe Illustrator"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/df398af410f53f409ceae07cdc92662fd7adfeea-680x680.webp",
+          "title": "Adobe After Effects"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/d56c73ef93acf412224bf53d6c71a28dc9de9f5d-602x602.webp",
+          "title": "Adobe Photoshop"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/5b8f231638f577b3d8b1ed98014ac5c48790a313-602x602.webp",
+          "title": "Dimond"
+        },
+        {
+          "image": "https://cdn.sanity.io/images/12m48ewa/production/5b78f8dae1f0eab2a40aa8f4a21e7b1753a1e261-697x697.webp",
+          "title": "unclear icon"
+        }
+      ]
+    },
+    "title": "web-design"
+  }
+]

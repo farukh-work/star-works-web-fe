@@ -1,0 +1,12 @@
+{
+  "defaultAuthor": {
+    "name": "Farukh",
+    "role": "Full stack developer",
+    "avatar": "/images/team/farukh.jpg"
+  },
+  "defaultCategory": "Web Development",
+  "defaultTags": ["Next.js", "Web Development"],
+  "defaultFeatured": false,
+  "defaultCoverImage": "/blog-cover-image.png",
+  "interactiveMode": false
+}

@@ -1,0 +1,39 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /_app
+Disallow: /_document
+
+# GPTBot
+User-agent: GPTBot
+Allow: /
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+
+# Google-Extended
+User-agent: Google-Extended
+Allow: /
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# anthropic-ai
+User-agent: anthropic-ai
+Allow: /
+
+# cohere-ai
+User-agent: cohere-ai
+Allow: /
+
+# Host
+Host: https://www.starworks.in
+
+# Sitemaps
+Sitemap: https://www.starworks.in/sitemap.xml

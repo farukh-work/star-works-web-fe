@@ -1,0 +1,23 @@
+# Star Works
+
+> Star Works is a full-service digital agency based in India, specializing in web development, app development, e-commerce, digital marketing, and brand identity. We help startups and businesses worldwide build their digital presence.
+
+## Services
+- **Web Development**: Custom websites with Next.js, React, Node.js
+- **App Development**: Mobile and web apps for iOS, Android, cross-platform
+- **E-Commerce Solutions**: Online stores with Shopify, WooCommerce, custom builds
+- **Web Design**: UI/UX design, Figma prototyping, responsive design
+- **Digital Marketing**: SEO, content marketing, social media, paid advertising
+- **Brand Identity**: Logo design, brand guidelines, visual identity
+
+## Key Pages
+- Homepage: https://www.starworks.in
+- Services: https://www.starworks.in/services
+- Portfolio: https://www.starworks.in/portfolio
+- Blog: https://www.starworks.in/blog
+- About: https://www.starworks.in/about
+- Contact: https://www.starworks.in/contact-us
+
+## Contact
+- Website: https://www.starworks.in
+- Email: team.innovaft@gmail.com
