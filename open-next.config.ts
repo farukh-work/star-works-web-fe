@@ -1,5 +1,9 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
 
-// Default config: pages are rendered on demand by the Worker.
+// `npm run build` runs the OpenNext build (so Cloudflare's default build command works).
+// OpenNext calls this to build the Next.js app itself.
 // Later, add an R2 incremental cache here to cache ISR pages between requests.
-export default defineCloudflareConfig({});
+export default {
+  ...defineCloudflareConfig({}),
+  buildCommand: "npm run build:next",
+};
