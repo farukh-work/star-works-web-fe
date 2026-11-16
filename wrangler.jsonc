@@ -17,6 +17,13 @@
       "service": "star-works-website"
     }
   ],
+  "vars": {
+    "NEXT_PUBLIC_SANITY_PROJECT_ID": "ghmj0ih1",
+    "NEXT_PUBLIC_SANITY_DATASET": "production",
+    "NEXT_PUBLIC_SANITY_API_VERSION": "2025-01-01",
+    "NEXT_PUBLIC_SITE_URL": "https://www.starworks.in",
+    "CONTACT_FORM_FROM_EMAIL": "onboarding@resend.dev"
+  },
   "observability": {
     "enabled": true
   }
