@@ -35,6 +35,9 @@ const SECRET = [
   [/eyJ[A-Za-z0-9_-]{15,}\.eyJ[A-Za-z0-9_-]{15,}\.[A-Za-z0-9_-]{15,}/, 'JWT (Supabase keys look like this)'],
 ];
 const MALWARE = [
+  [/atob\s*\(\s*process\.env/, 'decodes a URL/code from an environment variable (malware loader)'],
+  [/AUTH_API_KEY/, 'AUTH_API_KEY is the key the fake-font malware loader reads'],
+  [/\beval\s*\(/, 'eval(...) runs text as code'],
   [/(^|\n)[^\n]{0,300}[ \t]{80,}[^\n\s]{200,}/, 'code hidden after a long run of spaces (off-screen payload)'],
   [/\b(?:parseInt|parseFloat)\(-?\w+\(0x[0-9a-f]+\)\)[^\n]{0,80}Math\[?\.?['"]?(?:trunc|ceil)/, 'obfuscated string-array loader'],
   [/runOn['"]?\s*:\s*['"]folderOpen/, 'VS Code task that runs when the folder opens'],
