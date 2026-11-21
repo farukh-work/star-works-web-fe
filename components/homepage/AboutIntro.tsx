@@ -24,7 +24,7 @@ const AboutIntro = () => {
             </p>
             <Link
               href="/about"
-              className="mt-8 inline-flex rounded-full bg-[#10211a] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#0b7a3a]"
+              className="keep-dark mt-8 inline-flex rounded-full bg-[#10211a] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#0b7a3a]"
             >
               Meet the team &rarr;
             </Link>
