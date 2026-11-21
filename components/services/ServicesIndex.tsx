@@ -40,31 +40,34 @@ export const ServicesGrid = ({ slides = [] }: { slides?: Slide[] }) => {
   return (
     <section className="py-16 lg:py-24">
       <div className="container-wrapper">
-        <h2 className="font-switzer max-w-xl text-3xl leading-tight font-semibold tracking-tight text-[#10211a] sm:text-4xl lg:text-5xl">
+        <h2 className="font-switzer max-w-xl text-3xl leading-[1.1] font-semibold tracking-tight text-[#10211a] sm:text-4xl lg:text-5xl">
           What we do
         </h2>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((s) => (
+        <div className="mt-12 border-t border-[#10211a]/15">
+          {items.map((s, i) => (
             <Link
               key={s.slug!.current}
               href={`/services/${s.slug!.current}`}
-              className="group overflow-hidden rounded-3xl border border-[#10211a]/10 bg-white transition hover:-translate-y-1 hover:shadow-xl"
+              className="group grid items-center gap-5 border-b border-[#10211a]/15 py-6 transition-colors hover:bg-[#10211a]/[0.03] sm:grid-cols-[3rem_1fr_11rem_3rem] sm:gap-8 lg:py-8"
             >
-              <div className="relative aspect-[16/10] bg-[#eef4f0]">
+              <span className="text-sm font-semibold text-[#0b7a3a]">{String(i + 1).padStart(2, "0")}</span>
+              <h3 className="text-3xl leading-tight font-semibold tracking-tight text-[#10211a] transition-transform duration-300 group-hover:translate-x-2 lg:text-5xl">
+                {clean(s.title)}
+              </h3>
+              <div className="relative hidden aspect-[16/10] overflow-hidden rounded-2xl bg-[#eef4f0] sm:block">
                 {s.image && (
                   <Image
                     src={s.image}
                     alt={clean(s.title)}
                     fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition duration-500 group-hover:scale-105"
+                    sizes="176px"
+                    className="object-cover transition duration-500 group-hover:scale-110"
                   />
                 )}
               </div>
-              <div className="flex items-center justify-between p-6">
-                <h3 className="text-xl font-semibold text-[#10211a]">{clean(s.title)}</h3>
-                <span className="text-lg text-[#0b7a3a] transition group-hover:translate-x-1">&rarr;</span>
-              </div>
+              <span className="hidden size-11 items-center justify-center rounded-full border border-[#10211a]/20 text-lg text-[#10211a] transition group-hover:border-transparent group-hover:bg-[#10211a] group-hover:text-white sm:flex">
+                &rarr;
+              </span>
             </Link>
           ))}
         </div>

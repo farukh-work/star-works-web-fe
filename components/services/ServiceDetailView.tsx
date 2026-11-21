@@ -41,25 +41,28 @@ export const IncludedGrid = ({ data }: { data?: any }) => {
   if (!slides.length) return null;
   return (
     <section className="py-16 lg:py-24">
-      <div className="container-wrapper">
-        <h2 className="font-switzer max-w-xl text-3xl leading-tight font-semibold tracking-tight text-[#10211a] sm:text-4xl lg:text-5xl">
+      <div className="container-wrapper grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+        <h2 className="font-switzer max-w-md text-3xl leading-[1.1] font-semibold tracking-tight text-[#10211a] sm:text-4xl lg:sticky lg:top-32 lg:self-start lg:text-5xl">
           {clean(data?.sectionHeading) || "What's included"}
         </h2>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {slides.map((s: any) => (
-            <div key={s.heading} className="overflow-hidden rounded-3xl border border-[#10211a]/10 bg-white">
-              {s.image && (
-                <div className="relative aspect-[16/10] bg-[#eef4f0]">
-                  <Image src={s.image} alt={clean(s.heading)} fill sizes="(min-width: 1024px) 33vw, 100vw" className="object-cover" />
-                </div>
-              )}
-              <div className="p-6">
+        <ul className="divide-y divide-[#10211a]/15 border-y border-[#10211a]/15">
+          {slides.map((s: any, i: number) => (
+            <li key={s.heading} className="grid items-center gap-4 py-6 sm:grid-cols-[2.5rem_1fr_7rem] sm:gap-6">
+              <span className="text-sm font-bold text-[#0b7a3a]">{String(i + 1).padStart(2, "0")}</span>
+              <div>
                 <h3 className="text-lg font-semibold text-[#10211a]">{clean(s.heading)}</h3>
-                {s.description && <p className="mt-2 text-sm leading-relaxed text-[#4d5f56]">{clean(s.description)}</p>}
+                {s.description && <p className="mt-1 text-sm leading-relaxed text-[#4d5f56]">{clean(s.description)}</p>}
               </div>
-            </div>
+              {s.image ? (
+                <div className="relative hidden aspect-[4/3] overflow-hidden rounded-xl bg-[#eef4f0] sm:block">
+                  <Image src={s.image} alt={clean(s.heading)} fill sizes="112px" className="object-cover" />
+                </div>
+              ) : (
+                <span className="hidden sm:block" />
+              )}
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
@@ -69,23 +72,28 @@ export const ProcessCards = ({ data }: { data?: any }) => {
   const cards = (data?.processCards || []).filter((c: any) => c?.title);
   if (!cards.length) return null;
   return (
-    <section className="py-16 lg:py-24">
-      <div className="container-wrapper">
-        <div className="mx-auto max-w-2xl text-center">
+    <section className="py-16 lg:py-28">
+      <div className="container-wrapper grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+        <div className="lg:sticky lg:top-32 lg:self-start">
           <p className="text-primary text-sm font-semibold">Our process</p>
-          <h2 className="font-switzer mt-3 text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="font-switzer mt-3 text-3xl leading-[1.1] font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
             {clean(data?.sectionHeading) || "How we do it"}
           </h2>
         </div>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ol className="relative">
+          <span className="absolute top-3 bottom-3 left-[1.15rem] w-px bg-linear-to-b from-primary/60 via-white/15 to-transparent sm:left-[1.4rem]" aria-hidden />
           {cards.map((c: any, i: number) => (
-            <div key={c.title + i} className="rounded-3xl border border-white/10 bg-white/5 p-6">
-              <span className="text-primary text-sm font-bold">{clean(c.number) || String(i + 1).padStart(2, "0")}</span>
-              <h3 className="mt-5 text-lg font-semibold text-white">{clean(c.title)}</h3>
-              {c.description && <p className="mt-2 text-sm leading-relaxed text-white/65">{clean(c.description)}</p>}
-            </div>
+            <li key={c.title + i} className="group relative flex gap-5 pb-10 last:pb-0 sm:gap-7">
+              <span className="bg-moss border-primary/60 text-primary relative z-10 flex size-9 shrink-0 items-center justify-center rounded-full border text-xs font-bold sm:size-11 sm:text-sm">
+                {clean(c.number) || String(i + 1).padStart(2, "0")}
+              </span>
+              <div className="flex-1 border-b border-white/10 pb-10 group-last:border-0 group-last:pb-0">
+                <h3 className="text-xl font-semibold text-white sm:text-2xl">{clean(c.title)}</h3>
+                {c.description && <p className="mt-2 max-w-lg text-sm leading-relaxed text-white/65 sm:text-base">{clean(c.description)}</p>}
+              </div>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
     </section>
   );

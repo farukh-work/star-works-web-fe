@@ -88,14 +88,17 @@ export const RoadmapHero = () => (
           View services
         </Link>
       </div>
-      <div className="mx-auto mt-14 grid max-w-5xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        {phases.map((p) => (
-          <div key={p.n} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
-            <p className="text-primary text-xs font-bold">{p.n}</p>
-            <p className="mt-2 text-sm font-semibold text-white">{p.title}</p>
-            <p className="mt-1 text-xs text-white/55">{p.time}</p>
-          </div>
-        ))}
+      <div className="mx-auto mt-16 max-w-5xl">
+        <div className="relative grid grid-cols-3 gap-y-8 sm:grid-cols-6">
+          <span className="absolute top-[0.55rem] right-[8%] left-[8%] hidden h-px bg-white/20 sm:block" aria-hidden />
+          {phases.map((p) => (
+            <div key={p.n} className="relative flex flex-col items-center text-center">
+              <span className="bg-primary relative z-10 size-3 rounded-full ring-4 ring-[#001209]" />
+              <p className="mt-4 text-sm font-semibold text-white">{p.title}</p>
+              <p className="mt-1 text-xs text-white/50">{p.time}</p>
+            </div>
+          ))}
+        </div>
       </div>
       <p className="mt-4 text-xs text-white/45">Timelines are typical and depend on the size of the project.</p>
     </div>
@@ -103,28 +106,26 @@ export const RoadmapHero = () => (
 );
 
 export const PhaseList = () => (
-  <section className="py-16 lg:py-24">
-    <div className="container-wrapper space-y-5">
+  <section className="py-8 lg:py-16">
+    <div className="container-wrapper">
       {phases.map((p) => (
-        <article key={p.n} className="grid gap-8 rounded-3xl border border-[#10211a]/10 bg-white p-6 lg:grid-cols-[1.1fr_1fr] lg:p-10">
+        <article key={p.n} className="grid gap-8 border-b border-[#10211a]/15 py-12 last:border-0 lg:grid-cols-[7rem_1.1fr_1fr] lg:gap-12 lg:py-16">
+          <p className="font-switzer text-6xl leading-none font-semibold tracking-tight text-[#10211a]/15 lg:text-7xl">{p.n}</p>
           <div>
-            <div className="flex items-center gap-3">
-              <span className="flex size-10 items-center justify-center rounded-full bg-[#10211a] text-sm font-bold text-white">{p.n}</span>
-              <span className="rounded-full bg-[#e6f9ee] px-3 py-1 text-xs font-semibold text-[#0b7a3a]">{p.time}</span>
-            </div>
-            <h2 className="font-switzer mt-5 text-3xl font-semibold tracking-tight text-[#10211a] lg:text-4xl">{p.title}</h2>
-            <p className="mt-1 text-base font-medium text-[#0b7a3a]">{p.tagline}</p>
-            <p className="mt-4 text-sm leading-relaxed text-[#4d5f56] sm:text-base">{p.text}</p>
+            <span className="text-xs font-bold tracking-wide text-[#0b7a3a] uppercase">{p.time}</span>
+            <h2 className="font-switzer mt-2 text-3xl font-semibold tracking-tight text-[#10211a] lg:text-5xl">{p.title}</h2>
+            <p className="mt-2 text-base font-medium text-[#0b7a3a]">{p.tagline}</p>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-[#4d5f56] sm:text-base">{p.text}</p>
           </div>
-          <dl className="space-y-4 text-sm">
+          <dl className="divide-y divide-[#10211a]/10 border-y border-[#10211a]/10 self-start text-sm">
             {[
               ["Who is involved", p.who],
               ["What you get", p.get],
               ["What we need from you", p.need],
             ].map(([k, v]) => (
-              <div key={k} className="rounded-2xl bg-[#f4f8f5] p-4">
+              <div key={k} className="grid gap-1 py-4 sm:grid-cols-[9rem_1fr] sm:gap-4">
                 <dt className="text-xs font-bold tracking-wide text-[#4d5f56] uppercase">{k}</dt>
-                <dd className="mt-1 font-medium text-[#10211a]">{v}</dd>
+                <dd className="font-medium text-[#10211a]">{v}</dd>
               </div>
             ))}
           </dl>
@@ -144,22 +145,25 @@ const channels = [
 ];
 
 export const Communication = () => (
-  <section className="py-16 lg:py-24">
-    <div className="container-wrapper">
-      <div className="mx-auto max-w-2xl text-center">
+  <section className="py-16 lg:py-28">
+    <div className="container-wrapper grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+      <div className="lg:sticky lg:top-32 lg:self-start">
         <p className="text-primary text-sm font-semibold">How we communicate</p>
-        <h2 className="font-switzer mt-3 text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h2 className="font-switzer mt-3 text-3xl leading-[1.1] font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
           Simple, regular and in writing
         </h2>
       </div>
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {channels.map(([t, d]) => (
-          <div key={t} className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 className="text-lg font-semibold text-white">{t}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-white/65">{d}</p>
-          </div>
+      <ul className="divide-y divide-white/10 border-y border-white/10">
+        {channels.map(([t, d], i) => (
+          <li key={t} className="grid gap-2 py-6 sm:grid-cols-[3rem_1fr] sm:gap-4">
+            <span className="text-primary text-sm font-bold">{String(i + 1).padStart(2, "0")}</span>
+            <div>
+              <h3 className="text-lg font-semibold text-white">{t}</h3>
+              <p className="mt-1 text-sm leading-relaxed text-white/65">{d}</p>
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   </section>
 );
@@ -183,20 +187,22 @@ const people = [
 ];
 
 export const WhoYouWorkWith = () => (
-  <section className="py-16 lg:py-24">
+  <section className="py-16 lg:py-28">
     <div className="container-wrapper">
-      <h2 className="font-switzer max-w-xl text-3xl leading-tight font-semibold tracking-tight text-[#10211a] sm:text-4xl lg:text-5xl">
+      <h2 className="font-switzer max-w-xl text-3xl leading-[1.1] font-semibold tracking-tight text-[#10211a] sm:text-4xl lg:text-5xl">
         Who you will actually work with
       </h2>
-      <div className="mt-10 grid gap-5 lg:grid-cols-3">
+      <div className="mt-12 divide-y divide-[#10211a]/15 border-y border-[#10211a]/15">
         {people.map((p) => (
-          <div key={p.name} className="rounded-3xl border border-[#10211a]/10 bg-white p-6">
+          <div key={p.name} className="grid items-center gap-5 py-8 sm:grid-cols-[4.5rem_1fr_1.4fr] sm:gap-10">
             <span className="bg-primary flex size-14 items-center justify-center rounded-full text-xl font-bold text-black">
               {p.name.charAt(0)}
             </span>
-            <h3 className="mt-5 text-xl font-semibold text-[#10211a]">{p.name}</h3>
-            <p className="text-sm font-medium text-[#0b7a3a]">{p.role}</p>
-            <p className="mt-3 text-sm leading-relaxed text-[#4d5f56]">{p.text}</p>
+            <div>
+              <h3 className="text-2xl font-semibold text-[#10211a]">{p.name}</h3>
+              <p className="text-sm font-medium text-[#0b7a3a]">{p.role}</p>
+            </div>
+            <p className="text-sm leading-relaxed text-[#4d5f56] sm:text-base">{p.text}</p>
           </div>
         ))}
       </div>
@@ -223,9 +229,9 @@ export const WhatWeAsk = () => (
           A good project is a team effort
         </h2>
       </div>
-      <ul className="space-y-4">
+      <ul className="divide-y divide-white/10 border-y border-white/10">
         {asks.map((a) => (
-          <li key={a} className="flex gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-white/80">
+          <li key={a} className="flex gap-3 py-5 text-sm text-white/80 sm:text-base">
             <span className="text-primary mt-0.5">&#10003;</span>
             {a}
           </li>
