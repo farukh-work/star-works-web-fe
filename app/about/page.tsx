@@ -1,12 +1,6 @@
-import About from "@/components/about/About";
 export const revalidate = 60;
-import Achievements from "@/components/about/Achievements";
-import CoreValue from "@/components/about/CoreValue";
-import AboutHero from "@/components/about/AboutHero";
-import MeetTheTeam from "@/components/about/MeetTheTeam";
-import TimelinePage from "@/components/about/TimelinePage";
-import WhyChooseUs from "@/components/about/WhyChooseUs";
-import CommonCtaSection from "@/components/common/CommonCtaSection";
+import { AboutHeroNew, StorySection, PrinciplesSection, TeamSection } from "@/components/about/AboutNew";
+import CtaBand from "@/components/homepage/CtaBand";
 import { generateSeo } from "@/lib/seo";
 import { ABOUT_US_QUERY } from "@/sanity/aboutUs";
 import { client } from "@/sanity/client";
@@ -51,14 +45,21 @@ export default async function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }}
       />
       <BreadcrumbSchema items={breadcrumbs} />
-      <AboutHero data={data?.heroSection} />
-      <About data={data?.aboutSection} />
-      <Achievements data={data?.achievementsSection} />
-      <CoreValue data={data?.coreValuesSection} />
-      <MeetTheTeam data={data?.teamSection} />
-      <TimelinePage data={data?.timelineSection} />
-      <WhyChooseUs data={data?.whyChooseUsSection} />
-      <CommonCtaSection data={data?.ctaSection} />
+      <div className="theme-dark">
+        <AboutHeroNew />
+      </div>
+      <div className="theme-round theme-light">
+        <StorySection />
+      </div>
+      <div className="theme-round theme-dark">
+        <PrinciplesSection />
+      </div>
+      <div className="theme-round theme-light">
+        <TeamSection members={teamMembers} />
+      </div>
+      <div className="theme-round theme-dark">
+        <CtaBand />
+      </div>
     </>
   );
 }
