@@ -8,7 +8,7 @@ import HeroBento from "@/components/homepage/HeroBento";
 import ServicesCards from "@/components/homepage/ServicesCards";
 import PricingPlans from "@/components/homepage/PricingPlans";
 import Marquee from "@/components/common/Marquee";
-import AboutUs from "@/components/homepage/AboutUs";
+import AboutIntro from "@/components/homepage/AboutIntro";
 import dynamic from "next/dynamic";
 import { generateSeo } from "@/lib/seo";
 import CommonCtaSection from "@/components/common/CommonCtaSection";
@@ -40,7 +40,7 @@ export default async function Home() {
         <Marquee features={data?.marqueeSection?.features || []} />
       </div>
       <div className="theme-round theme-light">
-        <AboutUs data={data?.aboutUsSection} />
+        <AboutIntro />
       </div>
       <div className="theme-round theme-dark">
         <Deliverables data={data?.deliverablesSection} />

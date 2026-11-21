@@ -27,7 +27,7 @@ const HeroBento = () => {
             Websites, mobile apps and AI automation that grow your business
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
-            Star Works is a small senior team of developers and designers. We plan, design and build
+            Star Works is a small, hands-on team of developers and designers. We plan, design and build
             the product, then help you launch and improve it.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
