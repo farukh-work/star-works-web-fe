@@ -1,120 +1,100 @@
-import { client } from "@/sanity/client";
-import { footerQuery } from "@/sanity/queries";
 import Link from "next/link";
-import FooterListItems from "./FooterListItems";
 import { StarWorksLogo, StarWorksLogoIcon } from "./Icons";
 import { GitHubIcon, CalIcon, LinkedInIcon } from "./LeftSideIcons";
+import { siteFacts } from "@/lib/siteFacts";
 
-const Footer = async () => {
-  const currentYear = new Date().getFullYear();
-  const footerData = await client.fetch(footerQuery);
+const columns = [
+  {
+    title: "Services",
+    links: [
+      { name: "Websites", href: "/services" },
+      { name: "Mobile apps", href: "/services" },
+      { name: "AI agents & automation", href: "/services" },
+      { name: "UI/UX & product design", href: "/services" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { name: "About", href: "/about" },
+      { name: "Our work", href: "/portfolio" },
+      { name: "Blog", href: "/blog" },
+      { name: "FAQs", href: "/faqs" },
+      { name: "Contact", href: "/contact-us" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Terms & Conditions", href: "/terms-conditions" },
+    ],
+  },
+];
 
+const social =
+  "hover:bg-primary/20 text-antiflash hover:text-primary flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-all duration-300 hover:scale-[1.08]";
+
+const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <footer className="mx-auto mb-10 w-full max-w-348 px-4">
-      <div className="bg-gradient-to-br from-deep-forest via-dark-moss to-moss border border-white/5 rounded-2xl p-6 lg:p-8 xl:rounded-3xl xl:p-12">
-        {/* MAIN FOOTER */}
-        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
-          {/* BRAND */}
-          <div className="lg:col-span-2">
-            <Link
-              href="/"
-              className="mb-6 inline-block text-3xl font-bold text-white"
-            >
+    <footer className="mx-auto mb-8 w-full max-w-348 px-4 pt-4">
+      <div className="rounded-3xl border border-white/5 bg-linear-to-br from-deep-forest via-dark-moss to-moss p-6 lg:p-12">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+          <div>
+            <Link href="/" className="mb-5 inline-block text-white" aria-label="Star Works home">
               <span className="sm:hidden">
                 <StarWorksLogoIcon />
               </span>
-
               <span className="hidden sm:block">
                 <StarWorksLogo />
               </span>
             </Link>
-
-            <p className="text-antiflash mb-6 max-w-sm text-base leading-relaxed">
-              {footerData?.description}
+            <p className="text-antiflash/80 max-w-sm text-sm leading-relaxed">
+              We design and build websites, mobile apps and AI automation for founders and growing businesses.
             </p>
-
-            {/* SOCIAL LINKS */}
-            <div className="flex space-x-4">
-              {/* GitHub Link */}
-              <Link
-                href="https://github.com/farukh-work"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="hover:bg-primary/20 text-antiflash hover:text-primary flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-sm font-medium transition-all duration-300 ease-in-out hover:scale-[1.08]"
-              >
+            <div className="mt-6 flex gap-3">
+              <Link href="https://github.com/farukh-work" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={social}>
                 <GitHubIcon />
               </Link>
-
-              {/* LinkedIn Link */}
               <Link
                 href="https://www.linkedin.com/in/farukh-khan1997/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="hover:bg-primary/20 text-antiflash hover:text-primary flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-sm font-medium transition-all duration-300 ease-in-out hover:scale-[1.08]"
+                className={social}
               >
                 <LinkedInIcon />
               </Link>
-
-              {/* Cal.com Link */}
-              <Link
-                href="https://cal.com/star-works/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Book a call on Cal.com"
-                className="hover:bg-primary/20 text-antiflash hover:text-primary flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-sm font-medium transition-all duration-300 ease-in-out hover:scale-[1.08]"
-              >
+              <Link href={siteFacts.calLink} target="_blank" rel="noopener noreferrer" aria-label="Book a call" className={social}>
                 <CalIcon />
               </Link>
-              {footerData?.socialLinks
-                ?.filter((link: any) => {
-                  const name = link.name?.toLowerCase();
-                  return name !== "fa" && name !== "facebook";
-                })
-                ?.map((link: any, index: number) => (
-                  <Link
-                    key={index}
-                    href={link.href || ""}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:bg-primary/20 text-antiflash hover:text-primary flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-sm font-medium transition-all duration-300 ease-in-out hover:scale-[1.08]"
-                  >
-                    {link.name.slice(0, 2)}
-                  </Link>
-                ))}
             </div>
           </div>
 
-          {/* FOOTER SECTIONS */}
-          {footerData?.footerSections?.map((section: any, index: number) => (
-            <FooterListItems section={section} key={index} />
+          {columns.map((col) => (
+            <div key={col.title}>
+              <h3 className="mb-4 text-sm font-semibold text-white">{col.title}</h3>
+              <ul className="space-y-3">
+                {col.links.map((l) => (
+                  <li key={l.name}>
+                    <Link href={l.href} className="hover:text-primary text-sm text-white/65 transition-colors">
+                      {l.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
 
-        {/* BOTTOM BAR */}
-        <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col items-center justify-between md:flex-row">
-            <p className="font-exo2 mb-4 text-sm text-white/60 md:mb-0">
-              © {currentYear} {footerData?.copyrightText}
-            </p>
-
-            <div className="flex flex-wrap gap-6">
-              <Link
-                href="/privacy-policy"
-                className="hover:text-primary font-exo2 text-sm text-white/60 transition-colors duration-300"
-              >
-                Privacy
-              </Link>
-
-              <Link
-                href="/terms-conditions"
-                className="hover:text-primary font-exo2 text-sm text-white/60 transition-colors duration-300"
-              >
-                Terms
-              </Link>
-            </div>
-          </div>
+        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
+          <p>
+            &copy; {year} Star Works. A brand of {siteFacts.legalName}. All rights reserved.
+          </p>
+          <Link href={siteFacts.calLink} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            Book a free call &rarr;
+          </Link>
         </div>
       </div>
     </footer>
