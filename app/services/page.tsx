@@ -1,24 +1,15 @@
 import React from "react";
 export const revalidate = 60;
-import dynamic from "next/dynamic";
 
 import { client } from "@/sanity/client";
 import { SERVICES_PAGE_QUERY } from "@/sanity/service";
 import { generateSeo } from "@/lib/seo";
 import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
-// Dynamic Imports
-const ServiceHero = dynamic(() => import("@/components/service/ServiceHero"));
+import { ServicesHero, ServicesGrid } from "@/components/services/ServicesIndex";
+import ProcessSteps from "@/components/homepage/ProcessSteps";
+import CtaBand from "@/components/homepage/CtaBand";
 
-const Marquee = dynamic(() => import("@/components/common/Marquee"));
-
-const Explore = dynamic(() => import("@/components/service/Explore"));
-
-const ServiceStats = dynamic(() => import("@/components/service/ServiceStats"));
-
-const CommonCtaSection = dynamic(
-  () => import("@/components/common/CommonCtaSection"),
-);
 export async function generateMetadata() {
   const data = await client.fetch(SERVICES_PAGE_QUERY);
 
@@ -38,15 +29,18 @@ const ServicesPage = async () => {
   return (
     <>
       <BreadcrumbSchema items={breadcrumbs} />
-      <ServiceHero data={data?.heroSection} />
-
-      <Marquee features={data?.marqueeSection?.features || []} />
-
-      <Explore data={data?.exploreSection} />
-
-      <ServiceStats data={data?.statsSection} className="section-spacing" />
-
-      <CommonCtaSection data={data?.ctaSection} />
+      <div className="theme-dark">
+        <ServicesHero />
+      </div>
+      <div className="theme-round theme-light">
+        <ServicesGrid slides={data?.exploreSection?.slides} />
+      </div>
+      <div className="theme-round theme-dark">
+        <ProcessSteps />
+      </div>
+      <div className="theme-round theme-light">
+        <CtaBand />
+      </div>
     </>
   );
 };
