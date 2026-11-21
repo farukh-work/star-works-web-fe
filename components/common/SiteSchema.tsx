@@ -21,10 +21,9 @@ const SiteSchema = () => {
           "@id": `${siteUrl}/#logo`
         },
         "description": "Star Works is a premier web design and development agency offering Next.js websites, mobile app development, e-commerce, and branding solutions.",
-        "email": "team.innovaft@gmail.com",
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "team.innovaft@gmail.com",
+          "url": `${siteUrl}/contact-us`,
           "contactType": "customer support",
           "areaServed": "Worldwide",
           "availableLanguage": ["English"]
@@ -42,7 +41,6 @@ const SiteSchema = () => {
         "logo": `${siteUrl}/images/png/logo.png`,
         "image": `${siteUrl}/star-works-metaimage.webp`,
         "description": "Star Works is a dynamic design & full-stack development agency helping worldwide brands build scalable, fast web applications.",
-        "email": "team.innovaft@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "IN"
