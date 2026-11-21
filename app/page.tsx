@@ -39,17 +39,17 @@ export default async function Home() {
         <HeroBento />
         <Marquee features={data?.marqueeSection?.features || []} />
       </div>
-      <div className="theme-light">
+      <div className="theme-round theme-light">
         <AboutUs data={data?.aboutUsSection} />
       </div>
-      <div className="theme-dark">
+      <div className="theme-round theme-dark">
         <Deliverables data={data?.deliverablesSection} />
       </div>
-      <div className="theme-light">
+      <div className="theme-round theme-light">
         <ServicesCards />
         <OurWork data={data?.ourWorkSection} />
       </div>
-      <div className="theme-dark">
+      <div className="theme-round theme-dark">
         <ServiceFeatures
           data={data?.featuresSection}
           className="section-spacing-top"
@@ -59,10 +59,10 @@ export default async function Home() {
         <PricingPlans />
       </div>
       <FaqSchema data={data?.faqSection} />
-      <div className="theme-light">
+      <div className="theme-round theme-light">
         <Faq data={data?.faqSection} />
       </div>
-      <div className="theme-dark">
+      <div className="theme-round theme-dark">
         <CommonCtaSection data={data?.ctaSection} />
       </div>
     </>

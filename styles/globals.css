@@ -965,3 +965,27 @@ box-shadow: 12px -6px 24px rgba(0, 0, 0, 0.6); */
 .theme-light .keep-dark [class*="text-antiflash"] {
   color: #ffffff !important;
 }
+
+/* Soft, rounded overlap between a light and a dark section instead of a hard line */
+.theme-round {
+  position: relative;
+  z-index: 1;
+  margin-top: -2.5rem;
+  padding-top: 2.5rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+}
+.theme-round.theme-dark {
+  box-shadow: 0 -24px 60px -28px rgba(38, 240, 119, 0.35);
+}
+.theme-round.theme-light {
+  box-shadow: 0 -18px 50px -30px rgba(0, 0, 0, 0.45);
+}
+@media (min-width: 1024px) {
+  .theme-round {
+    margin-top: -3.5rem;
+    padding-top: 3.5rem;
+    border-top-left-radius: 3.5rem;
+    border-top-right-radius: 3.5rem;
+  }
+}

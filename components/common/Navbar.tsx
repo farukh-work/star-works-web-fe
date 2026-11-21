@@ -41,7 +41,7 @@ const Navbar = ({ headerData }: { headerData: HeaderData }) => {
   // SPLIT TEXT
 
   return (
-    <nav className="fixed top-0 z-50 w-full backdrop-blur-lg transition-[background-color,padding,backdrop-filter] duration-300">
+    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-moss/85 backdrop-blur-lg transition-[background-color,padding,backdrop-filter] duration-300">
       <div className="container-wrapper z-40 flex items-center justify-between py-3 lg:py-6">
         {/* LOGO */}
         <Link href="/" className="text-3xl font-bold text-white">
