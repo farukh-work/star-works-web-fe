@@ -3,7 +3,7 @@ import { footerQuery } from "@/sanity/queries";
 import Link from "next/link";
 import FooterListItems from "./FooterListItems";
 import { StarWorksLogo, StarWorksLogoIcon } from "./Icons";
-import { GitHubIcon, CalIcon } from "./LeftSideIcons";
+import { GitHubIcon, CalIcon, LinkedInIcon } from "./LeftSideIcons";
 
 const Footer = async () => {
   const currentYear = new Date().getFullYear();
@@ -44,6 +44,17 @@ const Footer = async () => {
                 className="hover:bg-primary/20 text-antiflash hover:text-primary flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-sm font-medium transition-all duration-300 ease-in-out hover:scale-[1.08]"
               >
                 <GitHubIcon />
+              </Link>
+
+              {/* LinkedIn Link */}
+              <Link
+                href="https://www.linkedin.com/in/farukh-khan1997/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="hover:bg-primary/20 text-antiflash hover:text-primary flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-sm font-medium transition-all duration-300 ease-in-out hover:scale-[1.08]"
+              >
+                <LinkedInIcon />
               </Link>
 
               {/* Cal.com Link */}

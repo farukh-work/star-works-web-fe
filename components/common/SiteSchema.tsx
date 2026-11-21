@@ -30,7 +30,8 @@ const SiteSchema = () => {
           "availableLanguage": ["English"]
         },
         "sameAs": [
-          "https://github.com/farukh-work"
+          "https://github.com/farukh-work",
+          "https://www.linkedin.com/in/farukh-khan1997/"
         ]
       },
       {

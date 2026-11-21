@@ -691,6 +691,11 @@ export const socialLinks = [
     href: "https://github.com/farukh-work",
     external: true,
   },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/farukh-khan1997/",
+    external: true,
+  },
 ];
 export const features = [
   "Development",
