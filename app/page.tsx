@@ -4,7 +4,9 @@ export const revalidate = 60;
 import { HOMEPAGE_QUERY } from "@/sanity/homepage";
 
 const getHomepage = cache(() => client.fetch(HOMEPAGE_QUERY));
-import Hero from "@/components/homepage/Hero";
+import HeroBento from "@/components/homepage/HeroBento";
+import ServicesCards from "@/components/homepage/ServicesCards";
+import PricingPlans from "@/components/homepage/PricingPlans";
 import Marquee from "@/components/common/Marquee";
 import AboutUs from "@/components/homepage/AboutUs";
 import dynamic from "next/dynamic";
@@ -15,7 +17,6 @@ import FaqSchema from "@/components/common/FaqSchema";
 
 const Deliverables = dynamic(() => import("@/components/service/Deliverables"));
 const OurWork = dynamic(() => import("@/components/homepage/OurWork"));
-const OurServices = dynamic(() => import("@/components/homepage/OurServices"));
 const ServiceFeatures = dynamic(
   () => import("@/components/service/ServiceFeatures"),
 );
@@ -35,7 +36,7 @@ export default async function Home() {
     <>
       <SiteSchema />
       <div className="theme-dark">
-        <Hero data={data?.heroSection} />
+        <HeroBento />
         <Marquee features={data?.marqueeSection?.features || []} />
       </div>
       <div className="theme-light">
@@ -45,14 +46,17 @@ export default async function Home() {
         <Deliverables data={data?.deliverablesSection} />
       </div>
       <div className="theme-light">
+        <ServicesCards />
         <OurWork data={data?.ourWorkSection} />
-        <OurServices data={data?.ourServicesSection} />
       </div>
       <div className="theme-dark">
         <ServiceFeatures
           data={data?.featuresSection}
           className="section-spacing-top"
         />
+      </div>
+      <div className="theme-dark">
+        <PricingPlans />
       </div>
       <FaqSchema data={data?.faqSection} />
       <div className="theme-light">
