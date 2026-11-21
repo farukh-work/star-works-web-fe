@@ -7,7 +7,7 @@ import GoogleAnalytics from "@/components/common/GoogleAnalytics";
 import NavbarWrapper from "@/components/common/NavbarWrapper";
 import Footer from "@/components/common/Footer";
 import LeftSideIcons from "@/components/common/LeftSideIcons";
-import { switzer, voyage } from "@/components/common/fonts";
+import { switzer } from "@/components/common/fonts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${switzer.variable} ${voyage.variable} bg-moss min-h-screen flex flex-col`}>
+      <body className={`${switzer.variable} bg-moss min-h-screen flex flex-col`}>
         <SmoothScrollProvider />
         <CursorTrail />
         <ScrollProgressBar />

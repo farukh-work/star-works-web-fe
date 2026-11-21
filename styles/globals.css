@@ -989,3 +989,12 @@ box-shadow: 12px -6px 24px rgba(0, 0, 0, 0.6); */
     border-top-right-radius: 3.5rem;
   }
 }
+
+/* Modern sans headings: the old serif "Voyage" display font now resolves to Switzer. */
+body {
+  --font-voyage: var(--font-switzer), "Switzer", system-ui, sans-serif;
+}
+.font-voyage {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
