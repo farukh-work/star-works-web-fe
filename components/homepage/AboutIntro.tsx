@@ -31,16 +31,13 @@ const AboutIntro = () => {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-3 sm:grid-cols-3 lg:gap-4">
-          {cards.map((c, i) => (
-            <div
-              key={c.label}
-              className={`flex min-h-44 flex-col justify-between rounded-3xl p-6 ${
-                i === 1 ? "bg-primary text-black" : "border border-[#10211a]/10 bg-white text-[#10211a]"
-              }`}
-            >
-              <p className="text-5xl font-semibold tracking-tight">{c.value}</p>
-              <p className={`text-sm ${i === 1 ? "text-black/70" : "text-[#4d5f56]"}`}>{c.label}</p>
+        <div className="mt-16 grid divide-y divide-[#10211a]/15 border-y border-[#10211a]/15 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+          {cards.map((c) => (
+            <div key={c.label} className="px-0 py-8 sm:px-8 sm:first:pl-0 sm:last:pr-0">
+              <p className="font-switzer text-6xl leading-none font-semibold tracking-tight text-[#10211a] lg:text-7xl">
+                {c.value}
+              </p>
+              <p className="mt-3 max-w-[16rem] text-sm text-[#4d5f56]">{c.label}</p>
             </div>
           ))}
         </div>
