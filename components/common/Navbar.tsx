@@ -11,6 +11,15 @@ import { lenisRef } from "./SmoothScrollProvider";
 
 
 
+// Adds a Roadmap link after Services when the CMS menu does not have one yet.
+const withRoadmap = (links: any[] | undefined) => {
+  if (!links) return links;
+  if (links.some((l) => /roadmap/i.test(l?.href || ""))) return links;
+  const i = links.findIndex((l) => /services/i.test(l?.href || ""));
+  const item = { _key: "roadmap-link", title: "Roadmap", href: "roadmap" };
+  return i === -1 ? [...links, item] : [...links.slice(0, i + 1), item, ...links.slice(i + 1)];
+};
+
 const Navbar = ({ headerData }: { headerData: HeaderData }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathname = usePathname();
@@ -57,7 +66,7 @@ const Navbar = ({ headerData }: { headerData: HeaderData }) => {
         {/* DESKTOP NAV */}
         <div className="hidden lg:block">
           <ul className="flex items-center space-x-4 xl:space-x-8">
-            {headerData?.navLinks?.map((obj, index: number) => (
+            {withRoadmap(headerData?.navLinks)?.map((obj, index: number) => (
               <NavLinks key={index} obj={obj} />
             ))}
           </ul>
@@ -87,7 +96,7 @@ const Navbar = ({ headerData }: { headerData: HeaderData }) => {
 
         {/* SIDEBAR */}
         <Sidebar
-          headerData={headerData}
+          headerData={{ ...headerData, navLinks: withRoadmap(headerData?.navLinks) as any }}
           sidebarOpen={sidebarOpen}
           setSidebarOpen={setSidebarOpen}
         />
