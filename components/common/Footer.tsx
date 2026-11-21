@@ -37,7 +37,7 @@ const Footer = async () => {
             <div className="flex space-x-4">
               {/* GitHub Link */}
               <Link
-                href="https://github.com/star-works"
+                href="https://github.com/farukh-work"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"

@@ -688,7 +688,7 @@ export const socialLinks = [
 
   {
     name: "GitHub",
-    href: "https://github.com/star-works",
+    href: "https://github.com/farukh-work",
     external: true,
   },
 ];

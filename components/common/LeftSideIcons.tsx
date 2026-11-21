@@ -41,7 +41,7 @@ const LeftSideIcons = () => {
 
       {/* GitHub */}
       <Link
-        href="https://github.com/star-works"
+        href="https://github.com/farukh-work"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
