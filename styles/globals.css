@@ -918,3 +918,50 @@ box-shadow: 12px -6px 24px rgba(0, 0, 0, 0.6); */
 .terms-conditions-content > *:first-child {
   margin-top: 0 !important;
 }
+
+/* ---------- Hybrid theme: light sections with dark accents ----------
+   Wrap a section in .theme-light to turn it light; .theme-dark keeps the dark look. */
+.theme-dark {
+  background: var(--color-moss);
+  color: #ffffff;
+}
+.theme-light {
+  --th-ink: #10211a;
+  --th-muted: #4d5f56;
+  --th-line: rgba(16, 33, 26, 0.12);
+  --th-soft: #f4f8f5;
+  --th-accent: #0b7a3a;
+  background: #ffffff;
+  color: var(--th-ink);
+}
+.theme-light:nth-of-type(even) {
+  background: var(--th-soft);
+}
+.theme-light [class*="text-white"],
+.theme-light [class*="text-antiflash"],
+.theme-light [class*="text-soft-gray"] {
+  color: var(--th-ink) !important;
+}
+.theme-light [class*="text-white/"],
+.theme-light [class*="text-antiflash/"] {
+  color: var(--th-muted) !important;
+}
+.theme-light [class*="text-primary"]:not(button *):not(a[class*="bg-primary"]) {
+  color: var(--th-accent);
+}
+.theme-light [class*="border-white"] {
+  border-color: var(--th-line) !important;
+}
+.theme-light [class*="bg-white/"] {
+  background-color: rgba(16, 33, 26, 0.04) !important;
+}
+.theme-light [class*="bg-moss"],
+.theme-light [class*="bg-darkblack"] {
+  background-color: transparent !important;
+}
+/* keep dark cards dark inside light sections, with their own light text */
+.theme-light .keep-dark,
+.theme-light .keep-dark [class*="text-white"],
+.theme-light .keep-dark [class*="text-antiflash"] {
+  color: #ffffff !important;
+}

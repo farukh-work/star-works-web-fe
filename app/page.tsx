@@ -34,19 +34,33 @@ export default async function Home() {
   return (
     <>
       <SiteSchema />
-      <Hero data={data?.heroSection} />
-      <Marquee features={data?.marqueeSection?.features || []} />
-      <AboutUs data={data?.aboutUsSection} />
-      <Deliverables data={data?.deliverablesSection} />
-      <OurWork data={data?.ourWorkSection} />
-      <OurServices data={data?.ourServicesSection} />
-      <ServiceFeatures
-        data={data?.featuresSection}
-        className="section-spacing-top"
-      />
+      <div className="theme-dark">
+        <Hero data={data?.heroSection} />
+        <Marquee features={data?.marqueeSection?.features || []} />
+      </div>
+      <div className="theme-light">
+        <AboutUs data={data?.aboutUsSection} />
+      </div>
+      <div className="theme-dark">
+        <Deliverables data={data?.deliverablesSection} />
+      </div>
+      <div className="theme-light">
+        <OurWork data={data?.ourWorkSection} />
+        <OurServices data={data?.ourServicesSection} />
+      </div>
+      <div className="theme-dark">
+        <ServiceFeatures
+          data={data?.featuresSection}
+          className="section-spacing-top"
+        />
+      </div>
       <FaqSchema data={data?.faqSection} />
-      <Faq data={data?.faqSection} />{" "}
-      <CommonCtaSection data={data?.ctaSection} />
+      <div className="theme-light">
+        <Faq data={data?.faqSection} />
+      </div>
+      <div className="theme-dark">
+        <CommonCtaSection data={data?.ctaSection} />
+      </div>
     </>
   );
 }
