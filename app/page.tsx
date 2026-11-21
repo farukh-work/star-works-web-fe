@@ -7,20 +7,17 @@ const getHomepage = cache(() => client.fetch(HOMEPAGE_QUERY));
 import HeroBento from "@/components/homepage/HeroBento";
 import ServicesCards from "@/components/homepage/ServicesCards";
 import PricingPlans from "@/components/homepage/PricingPlans";
+import ProcessSteps from "@/components/homepage/ProcessSteps";
+import WorkGrid from "@/components/homepage/WorkGrid";
+import Testimonials from "@/components/homepage/Testimonials";
+import FaqSimple from "@/components/homepage/FaqSimple";
+import CtaBand from "@/components/homepage/CtaBand";
 import Marquee from "@/components/common/Marquee";
 import AboutIntro from "@/components/homepage/AboutIntro";
-import dynamic from "next/dynamic";
 import { generateSeo } from "@/lib/seo";
-import CommonCtaSection from "@/components/common/CommonCtaSection";
 import SiteSchema from "@/components/common/SiteSchema";
 import FaqSchema from "@/components/common/FaqSchema";
 
-const Deliverables = dynamic(() => import("@/components/service/Deliverables"));
-const OurWork = dynamic(() => import("@/components/homepage/OurWork"));
-const ServiceFeatures = dynamic(
-  () => import("@/components/service/ServiceFeatures"),
-);
-const Faq = dynamic(() => import("@/components/common/Faq"));
 
 export async function generateMetadata() {
   const data = await getHomepage();
@@ -41,29 +38,24 @@ export default async function Home() {
       </div>
       <div className="theme-round theme-light">
         <AboutIntro />
+        <ServicesCards />
       </div>
       <div className="theme-round theme-dark">
-        <Deliverables data={data?.deliverablesSection} />
+        <ProcessSteps />
       </div>
       <div className="theme-round theme-light">
-        <ServicesCards />
-        <OurWork data={data?.ourWorkSection} />
+        <WorkGrid data={data?.ourWorkSection} />
       </div>
       <div className="theme-round theme-dark">
-        <ServiceFeatures
-          data={data?.featuresSection}
-          className="section-spacing-top"
-        />
-      </div>
-      <div className="theme-dark">
+        <Testimonials data={data?.featuresSection} />
         <PricingPlans />
       </div>
       <FaqSchema data={data?.faqSection} />
       <div className="theme-round theme-light">
-        <Faq data={data?.faqSection} />
+        <FaqSimple data={data?.faqSection} />
       </div>
       <div className="theme-round theme-dark">
-        <CommonCtaSection data={data?.ctaSection} />
+        <CtaBand />
       </div>
     </>
   );
