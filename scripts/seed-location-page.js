@@ -3,12 +3,17 @@ const fs = require('fs');
 const path = require('path');
 
 const client = createClient({
-  projectId: "12m48ewa",
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "ghmj0ih1",
   dataset: "production",
   apiVersion: "2025-01-01",
-  token: "skNf5bfy6FDJyHc1TQ8PNib5HZtQ2gHYKv4nACZLsDYLSuH9ldOpVV4JsiLR5GcAWNPXChOZ0BHF6TjZwwQbe9tT6jfNLAyFGTgMtTpwawWBmMq0CGATsZlMU24UXwZ7ZVmAit8mzkGydb30Xf2qcj4dKpX8JiE9KOaoZGHyp5hs3yyAZxMr",
+  token: process.env.SANITY_API_TOKEN,
   useCdn: false,
 });
+
+if (!process.env.SANITY_API_TOKEN) {
+  console.error('Set SANITY_API_TOKEN in your environment before running this script.');
+  process.exit(1);
+}
 
 async function main() {
   console.log("Uploading bulb.png to Sanity...");

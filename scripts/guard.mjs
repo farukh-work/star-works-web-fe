@@ -27,6 +27,8 @@ const FORBIDDEN_PATH = [
 ];
 // Text that looks like a real secret or like malware.
 const SECRET = [
+  [/\bsk[A-Za-z0-9]{40,}\b/, 'Sanity API token'],
+  [/\btoken\s*[:=]\s*['"][A-Za-z0-9_-]{20,}['"]/, 'hard-coded token in code'],
   [/AIza[0-9A-Za-z_-]{35}/, 'Google API key'],
   [/sk_(live|test)_[0-9A-Za-z]{20,}/, 'Stripe secret key'],
   [/re_[A-Za-z0-9]{8,}_[A-Za-z0-9]{16,}/, 'Resend API key'],
