@@ -30,7 +30,7 @@ const SiteSchema = () => {
           "availableLanguage": ["English"]
         },
         "sameAs": [
-          "https://github.com/star-works-website"
+          "https://github.com/farukh-work"
         ]
       },
       {
