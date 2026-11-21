@@ -9,7 +9,6 @@ import Footer from "@/components/common/Footer";
 import LeftSideIcons from "@/components/common/LeftSideIcons";
 import { switzer, voyage } from "@/components/common/fonts";
 import type { Metadata } from "next";
-import Preloader from "@/components/preloader/Preloader";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
@@ -35,7 +34,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${switzer.variable} ${voyage.variable} bg-moss min-h-screen flex flex-col`}>
-        <Preloader />
         <SmoothScrollProvider />
         <CursorTrail />
         <ScrollProgressBar />
