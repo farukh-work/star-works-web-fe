@@ -1642,26 +1642,11 @@ export const coreValues = [
   },
 ];
 export const teamData = [
-  {
-    name: "Farukh Khan",
-    role: "CEO & Founder",
-    image: "/team/farukh.png", // Replace with actual path if available
-  },
-  {
-    name: "Shiv Choudhary",
-    role: "CTO",
-    image: "/team/shiv.png",
-  },
-  {
-    name: "Sunil Choudhary",
-    role: "Lead Developer",
-    image: "/team/sunil.png",
-  },
-  {
-    name: "Muskan Khan",
-    role: "Designer",
-    image: "/team/muskan.png",
-  },
+  { name: "Farukh Khan", role: "Founder & Full Stack Developer", image: "/team/farukh.png" },
+  { name: "Muskan Khan", role: "UI/UX & Product Designer", image: "/team/muskan.png" },
+  { name: "Rakesh", role: "Tech Lead", image: "/team/rakesh.png" },
+  { name: "Rohit", role: "Team Member", image: "/team/rohit.png" },
+  { name: "Nikhil", role: "Team Member", image: "/team/nikhil.png" },
 ];
 export const descriptionParagraphs = [
   "EraTech was born from a simple yet powerful vision: to bridge the gap between cutting-edge technology and meaningful human experiences. Our journey began in a small office with just four passionate individuals who believed in the transformative power of digital innovation.",
